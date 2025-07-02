@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>State College -chatbot</title>
+  <style>
+    body {
+
+      font-family: 'Times New Roman';
+    
+          }
+
+    header {
+      background-color: #006366;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      
+    }
+
+    nav {
+      background-color: #00b395;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin:10px;
+      font-weight: bold;
+      font-size: 20px;
+    }  
+
+    main {
+      padding: 50px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #04685d;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 80px;">State College </h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#"style="padding: 0 40px;">Admission</a>
+    <a href="#"style="padding: 0 40px;">Courses</a>
+    <a href="#"style="padding: 0 40px;">Calender</a>
+    <a href="#"style="padding: 0 40px;">Contact</a>
+    <a href="#"style="padding: 0 40px;">Email</a>
+  </nav>
+  <main>
+    <h2 style="font-size: 40px;">Welcome!</h2>
+    <p style="font-size: 20px;">State College  welcomes you all.We provide a wide variety of courses including extra-curicular activities.Explore our website with the help of our chatbot which gives your insight about the courses and other related details.</p>
+  </main>
+
+  <footer>
+    &copy; State College . All rights reserved.
+  </footer>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="collegebot"
+  agent-id="2d150870-720c-4c79-869f-e7a7260f8895"
+  language-code="en"
+  chat-icon="bot.png"
+></df-messenger>
+</body>
+</html>
