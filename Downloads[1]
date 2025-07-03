@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Chatbot</title>
+</head>
+<body>
+  <h1>Welcome to Our College</h1>
+  <p>Ask any questions about admission, fees, courses, etc.</p>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="collegebot"
+  agent-id="2d150870-720c-4c79-869f-e7a7260f8895"
+  language-code="en"
+></df-messenger>
+
+</body>
+</html>
