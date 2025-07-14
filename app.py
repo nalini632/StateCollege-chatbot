@@ -1,11 +1,12 @@
 from flask import Flask, request, render_template
 from google.cloud import dialogflow_v2 as dialogflow
 import os
-import json
+
 app = Flask(__name__)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\\Users\\NALINI.K\\Desktop\\flaskkkk\\json.json"  
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\\Users\\NALINI.K\\Desktop\\flaskkkk\\json.json"
 
 DIALOG_FLOW_PROJECTID = 'collegebot-hrhb'
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -16,7 +17,6 @@ def getbot_response():
     sessionid = "abcd"
     response = detect_intent_text(DIALOG_FLOW_PROJECTID, sessionid, user_message, 'en')
     return response
-
 
 def detect_intent_text(projectid, sessionid, text, language_code):
     sessionclient = dialogflow.SessionsClient()
